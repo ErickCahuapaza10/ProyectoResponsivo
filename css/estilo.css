@@ -1,0 +1,99 @@
+.padre
+{
+	background-color:#00FF00;
+	padding:20px;
+	display:grid;
+	grid-gap:10px;
+	grid-template-columns:3fr 3fr 3fr 1fr;
+	grid-template-rows:1fr 1fr auto auto 1fr;
+	grid-template-areas: "header header header header"
+						 "nav nav nav nav"	
+						 "cont1 cont2 cont3 ads1 "
+						 "cont1 cont2 cont3 ads2 "
+						 "foot foot foot foot";
+}
+.padre .header
+{
+	background-color:#33FFCC;
+	grid-area: header;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.padre .nav
+{
+	background-color:#FF0099;
+	grid-area:nav;
+	padding:5pxpx;
+	display:flex;
+	flex-direction:rows;
+	justify-content:center;
+	align-items:center;
+}
+.padre .nav .boton
+{
+	background-color:#FF6600;
+	margin:5px;
+}
+.padre .cont1
+{
+	background-color:#FF0000;
+	grid-area:cont1;
+}
+.padre .cont2
+{
+	background-color:#FF0000;
+	grid-area:cont2;
+}
+.padre .cont3
+{
+	background-color:#FF0000;
+	grid-area:cont3;
+}
+.padre .ads1
+{
+	background-color:#CCFF00;
+	grid-area:ads1;
+}
+.padre .ads2
+{
+	background-color:#CCFF00;
+	grid-area:ads2;
+}
+.padre .foot
+{
+	background-color:#663300;
+	grid-area:foot;
+}
+@media screen and (max-width:768px){
+	.padre
+	{
+		background-color:#0000CC;
+		font-family:Arial, Helvetica, sans-serif;
+		grid-template-areas:"header header header header"
+						    "nav nav nav nav"	
+						    "cont1 cont1 cont1 cont1"
+						    "cont2 cont2 cont3 cont3"
+							"ads1 ads2 ads2 ads2"
+						    "foot foot foot foot";
+	}
+	
+}
+@media screen and (max-width:400px){
+	.padre
+	{
+		background-color:#FF8000;
+		font-family:"Times New Roman", Times, serif;
+		grid-template-areas:"header header header header"
+						    "nav nav nav nav"	
+						    "cont1 cont1 cont1 cont1"
+						    "cont2 cont2 cont3 cont3"
+							"ads1 ads2 ads2 ads2"
+						    "foot foot foot foot";
+	}
+	
+}
+
+
+
+
